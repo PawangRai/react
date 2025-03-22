@@ -29,7 +29,7 @@ const anotherElement = (
 const workingReactElement = React.createElement(
     'a',
     {href: "https://www.google.com", target: "_blank"},
-    "You need to click here to go to Google"
+    "You need to click here to go to Google",
 )
 
 // We can inject javascript variables in JSX using the {}, we have to output the final output, we can't use conditionals or loops in here
