@@ -14,7 +14,15 @@ function App() {
     // setCounter(counter) Use setCounter to update the variable
 
     if (counter < 20) {
-      setCounter(counter + 1)
+      // setCounter(counter + 1)
+      // setCounter(counter + 1)
+      // setCounter(counter + 1) 
+      // If we have multiple state updates doing the same thing, React only considers the last one and our counter is incremented by 1 only. If we have a usecase where we have to increase the counter by 1 many times then we can use the below technique.
+
+      setCounter(prev => prev + 1)
+      setCounter(prev => prev + 1)
+      setCounter(prev => prev + 1)
+      setCounter(prev + 1)
     }
   }
 
